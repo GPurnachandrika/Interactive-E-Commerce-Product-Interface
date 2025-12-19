@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase | E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="logo">ShopEase</h1>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="cart">
+        🛒 Cart <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Products ===== -->
+  <main class="container">
+    <section class="product-section">
+      <h2 class="section-title">Featured Products</h2>
+
+      <div class="product-grid">
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/250" alt="Wireless Headphones">
+          <h3>Wireless Headphones</h3>
+          <p class="price">₹2,999</p>
+          <p class="desc">Noise cancellation with long battery life.</p>
+          <button onclick="addToCart('Wireless Headphones',2999)">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/250" alt="Smart Watch">
+          <h3>Smart Watch</h3>
+          <p class="price">₹3,499</p>
+          <p class="desc">Fitness tracking and notifications.</p>
+          <button onclick="addToCart('Smart Watch',3499)">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/250" alt="Bluetooth Speaker">
+          <h3>Bluetooth Speaker</h3>
+          <p class="price">₹1,999</p>
+          <p class="desc">Portable speaker with deep bass.</p>
+          <button onclick="addToCart('Bluetooth Speaker',1999)">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/250" alt="Wireless Mouse">
+          <h3>Wireless Mouse</h3>
+          <p class="price">₹899</p>
+          <p class="desc">Ergonomic design with smooth tracking.</p>
+          <button onclick="addToCart('Wireless Mouse',899)">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/250" alt="Laptop Stand">
+          <h3>Laptop Stand</h3>
+          <p class="price">₹1,299</p>
+          <p class="desc">Adjustable stand for better posture.</p>
+          <button onclick="addToCart('Laptop Stand',1299)">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/250" alt="Power Bank">
+          <h3>Power Bank</h3>
+          <p class="price">₹1,499</p>
+          <p class="desc">10000mAh fast charging power bank.</p>
+          <button onclick="addToCart('Power Bank',1499)">Add to Cart</button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>© 2025 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
